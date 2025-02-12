@@ -1,0 +1,8 @@
+import base64
+
+def decode_vacancy():
+    encoded_message = "0J3QsCDQuNC80LXQvdC10YAg0L3QsCDRgdCw0LnRgtC+0Lwg0YHQvtC30LTQsNC90LjRjyDQsiDRg9GB0LvRg9Cz0LDRhSwg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GM0YHQutC+0LPQviDQvdCw0YfQsNC70YzQvdC+0LPQviDQv9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60L7Qs9C+INGB0LDQudGC0L7QvC4="
+    decoded_message = encoded_message.decode('utf-8')  # Ошибка: нужно исправить на base64.b64decode(encoded_message).decode('utf-8')
+    print(decoded_message)
+
+decode_vacancy()
